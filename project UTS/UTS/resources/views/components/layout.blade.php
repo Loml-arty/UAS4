@@ -17,9 +17,5 @@
     <x-header>{{ $title }}</x-header>
     <main> {{ $slot }}</main>
     <script src="{{ asset('js/app.js') }}"></script>
-
-
-
-
 </body>
 </html>
