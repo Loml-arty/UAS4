@@ -1,0 +1,25 @@
+<?php
+// Menyiapkan array kosong untuk menampung angka
+$list_genap = [];
+$list_ganjil = [];
+
+// Melakukan perulangan dari angka 1 hingga 100
+for ($angka = 1; $angka <= 100; $angka++) {
+    if ($angka % 2 == 0) {
+        $list_genap[] = $angka;
+    } else {
+        $list_ganjil[] = $angka;
+    }
+}
+
+// Menampilkan hasilnya
+echo "Jumlah bilangan genap: " . count($list_genap) . "\n";
+echo "Jumlah bilangan ganjil: " . count($list_ganjil) . "\n\n";
+
+// Menampilkan isi array tanpa implode
+echo "List Genap:\n";
+print_r($list_genap);
+
+echo "\nList Ganjil:\n";
+print_r($list_ganjil);
+?>

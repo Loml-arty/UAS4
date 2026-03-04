@@ -1,0 +1,16 @@
+<?php
+
+function segitiga() {
+$tinggi = 5;
+
+for ($i = 0; $i < $tinggi; $i++) {
+
+  for ($j = 0; $j <= $i; $j++) {
+    echo "* ";
+  }
+
+  echo "\n";
+}
+}
+
+segitiga();

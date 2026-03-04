@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(99, 3, 3);
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(200, 3, 13);
+    display: flex;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.30);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.Logo {
+    color: aliceblue;
+    background-color: rgb(200, 3, 13);
+    font-size: 1.7em;
+    user-select: none;
+}
+
+.Navbar-container {
+    background-color: rgb(200, 3, 13);
+}
+
+.Navbar {
+    color: rgb(255, 255, 255);
+    background-color: rgb(200, 3, 13);
+    text-decoration: none;
+    padding: 5px 15px;
+    margin-left: 10px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.Navbar:hover {
+    background: rgb(167, 7, 7);
+}
+
+.judul {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 0 80px;
+}
+
+.menu {
+    height: 200px;
+    width: 300px;
+    background: rgb(200, 3, 13);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nama-makanan {
+    height: 40px;
+    background: white;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gambar-makanan {
+    height: 130px;
+    background: rgb(201, 159, 159);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    border-radius: 0 0 15px 15px;
+}
+
+
+
+
+/* ===== Pagination Container ===== */
+.previous {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    border-radius: 10px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    color: rgb(200, 3, 13);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: rgb(200, 3, 13);
+    color: white;
+    border-color: rgb(200, 3, 13);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(200, 3, 13, 0.3);
+}
+
+.pagination .active .page-link {
+    background-color: rgb(200, 3, 13);
+    color: #fff;
+    border-color: rgb(200, 3, 13);
+    box-shadow: 0 0 8px rgba(200, 3, 13, 0.4);
+}
+
+.pagination .disabled .page-link {
+    color: #aaa;
+    background-color: #f8f9fa;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
+.small.text-muted{
+    margin: 15px 0 0 0px;
+    padding-bottom: 20px;
+    color:aliceblue;
+}
