@@ -1,13 +1,141 @@
-* {
-    margin: 0;
-    padding: 0;
+:root {
+  --warna-utama: #7F69A9;
+  --warna-sekunder: #FBF9FC;
+
+  --text-color: #7F69A9;
 }
 
+a {
+  text-decoration: none;
+}
+
+.isisari-konten {
+  width: auto;
+  height: auto;
+  background-color: var(--warna-sekunder);
+  display: flex;
+  margin: -660px 11px 0 215px;
+  
+}
+
+body {
+    margin: 0;
+    font-family: "Huninn", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--warna-utama);
+}
+
+.layout {
+    display: flex;
+}
+/* Header */
 .header-container {
-    color: rgb(255, 255, 255);
-    background-color: rgb(200, 3, 13);
-    text-decoration: none;
-    padding: 5px 15px;
-    font-size: 1.1em;
-    border-radius: 10px;
+  width: 1030px;
+  height: 60px;
+  margin: 0 0 0 215px;
+  background-color: var(--warna-sekunder);
+  border-radius: 15px 15px 0 0  ;
+}
+
+.search-bar-header {
+
+  display: flex;
+}
+
+.search-bar {
+  width: 250px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: var(--warna-utama);
+}
+
+.search {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--warna-sekunder);
+  text-align: center;
+}
+
+.notif-header {
+  margin-top: -30px;
+  margin-left:825px;
+}
+
+.header-ul {
+  list-style-type: none;
+}
+
+.profile-header-li {
+  margin-top: -25px;
+  margin-left: 880px;
+  color: var(--text-color);
+}
+
+.text-profile {
+  color: var(--text-color);
+}
+
+/* SIDEBAR */
+.sidebar-profile {
+  width: 100px;
+  height: 100px;
+  background-color: var(--warna-sekunder);
+}
+
+.profile-sidebar-a {
+  color: var(--text-color);
+}
+
+.sidebar-ul {
+    width: 150px;
+    height: 100vh;
+    margin-left: 15px;
+    margin-top: -60px;
+    background: var(--warna-sekunder);
+    border-radius: 15px 0 0 15px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    list-style-type: none;
+}
+
+.sidebar-li {
+  width: 130px;
+  height: 10px;
+  padding: 16px;
+  margin-left: -10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.sidebar-a {
+  color: var(--text-color);
+  margin-left: 10px;
+}
+
+.sidebar-a-kategori {
+  color: var(--text-color);
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.sidebar-li:hover {
+  transform: scale(1.04);
+  transition: transform 0.2s ease-in-out;
+  background-color: #EFE6FB;
+}
+
+/* Fotter container */
+.footer-container {
+  display: fixed;
+  width: 1040px;
+  height: 56px; 
+  border-left: 3px solid   #22222260;
+  background-color: var(--warna-sekunder);
+  margin: 480px 0 15px 205px;
+  border-radius: 0 0 10px 0;
 }
